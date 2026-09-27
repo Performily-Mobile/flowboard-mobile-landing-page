@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/hero.css">
   <link rel="stylesheet" href="assets/css/value.css">
   <link rel="stylesheet" href="assets/css/segments.css">
+  <link rel="stylesheet" href="assets/css/features.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
@@ -350,8 +351,178 @@
       </div>
     </section>
 
-  </main>
+    <section class="features section section--soft" id="funcionalidades" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sparkle"></use></svg><span data-i18n="features.eyebrow">Cómo funciona</span></span>
+          <h2 class="title-lg" id="features-title" data-i18n="features.title">Diseñada para quien no tiene una computadora en su jornada</h2>
+          <p class="lead" data-i18n="features.lead">Almacén, tienda, obra o ruta: Flowboard lleva cada trámite al teléfono que el colaborador ya usa.</p>
+        </div>
 
+        <article class="feature">
+          <div class="feature__copy">
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-request"></use></svg><span data-i18n="features.f1Eyebrow">Solicitudes</span></span>
+            <h3 class="title-md" data-i18n="features.f1Title">Aprueba desde la notificación, sin buscar nada</h3>
+            <p class="lead" data-i18n="features.f1Lead">La solicitud llega al jefe directo según la jerarquía registrada. Si no tiene jefe asignado, la atiende RR.HH. Cada cambio de estado avisa por push a ambas partes.</p>
+            <ul class="feature__points">
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f1p1">Ruteo automático</strong><small data-i18n="features.f1p1Sub">Al jefe directo o, en su defecto, a Recursos Humanos</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f1p2">Motivo obligatorio al rechazar</strong><small data-i18n="features.f1p2Sub">El colaborador siempre sabe por qué</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f1p3">Devolver a revisión</strong><small data-i18n="features.f1p3Sub">Pide información adicional sin cerrar el trámite</small></span></li>
+            </ul>
+          </div>
+          <div class="feature__visual glass glass--strong">
+            <span class="dots feature__dots" aria-hidden="true"></span>
+            <figure class="device" role="img" data-i18n-attr="aria-label:screen.approveAlt" aria-label="Bandeja de solicitudes por aprobar en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.approveTitle">Solicitudes</p>
+                  <div class="app__segmented"><span data-i18n="screen.approveMine">Mías</span><span class="is-active" data-i18n="screen.approveToApprove">Por aprobar (3)</span></div>
+                  <div class="app__card"><div class="app__item app__item--flat"><span class="app__avatar"></span><span class="app__item-text"><strong>Carlos Rojas</strong><small data-i18n="screen.approveR1">Vacaciones · 12/10 al 16/10</small></span></div><div class="app__actions"><span class="app__btn app__btn--outline" data-i18n="screen.reject">Rechazar</span><span class="app__btn" data-i18n="screen.approve">Aprobar</span></div></div>
+                  <div class="app__card"><div class="app__item app__item--flat"><span class="app__avatar"></span><span class="app__item-text"><strong>Lucía Torres</strong><small data-i18n="screen.approveR2">Permiso por horas · 29/09</small></span></div><div class="app__actions"><span class="app__btn app__btn--outline" data-i18n="screen.reject">Rechazar</span><span class="app__btn" data-i18n="screen.approve">Aprobar</span></div></div>
+                  <div class="app__card"><div class="app__item app__item--flat"><span class="app__avatar"></span><span class="app__item-text"><strong>Pedro Huamán</strong><small data-i18n="screen.approveR3">Descanso médico · 25/09</small></span></div><div class="app__actions"><span class="app__btn app__btn--outline" data-i18n="screen.reject">Rechazar</span><span class="app__btn" data-i18n="screen.approve">Aprobar</span></div></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span></span><span class="is-active"></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="float-card float-card--tl glass" aria-hidden="true">
+              <small data-i18n="features.f1Float">Tiempo de aprobación</small>
+              <strong class="float-card__big">&lt; 24 h</strong>
+              <small data-i18n="metrics.m1Sub">antes 48 a 72 h</small>
+            </div>
+            <div class="float-card float-card--br float-card--white" aria-hidden="true">
+              <strong data-i18n="features.f1Push">Nueva solicitud por aprobar</strong>
+              <small data-i18n="features.f1PushSub">Carlos Rojas · Vacaciones 12/10–16/10</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature feature--reverse">
+          <div class="feature__copy">
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-wifi"></use></svg><span data-i18n="features.f2Eyebrow">Sin conexión</span></span>
+            <h3 class="title-md" data-i18n="features.f2Title">Tu información sigue ahí aunque no haya señal</h3>
+            <p class="lead" data-i18n="features.f2Lead">Los últimos datos sincronizados se guardan cifrados en el dispositivo. El colaborador consulta su ficha, su saldo, sus boletas y el estado de sus solicitudes, y sus marcaciones se envían al reconectarse.</p>
+            <ul class="feature__points">
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f2p1">Datos guardados en tu teléfono</strong><small data-i18n="features.f2p1Sub">Tu información disponible aunque no tengas señal</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f2p2">Sincronización automática</strong><small data-i18n="features.f2p2Sub">Las marcaciones pendientes se reenvían solas</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f2p3">Última sincronización visible</strong><small data-i18n="features.f2p3Sub">Siempre sabes qué tan actual es el dato</small></span></li>
+            </ul>
+          </div>
+          <div class="feature__visual glass glass--strong">
+            <span class="dots feature__dots" aria-hidden="true"></span>
+            <figure class="device" role="img" data-i18n-attr="aria-label:screen.offlineAlt" aria-label="Saldo de vacaciones sin conexión en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.offlineTitle">Saldo de vacaciones</p>
+                  <div class="app__card app__card--muted"><small data-i18n="screen.offlineBanner">Sin conexión · datos del 26/09, 08:10</small></div>
+                  <div class="app__card">
+                    <p class="app__big app__big--primary">12 <small data-i18n="screen.homeDays">días disponibles</small></p>
+                    <div class="app__progress"><span style="--v:33%"></span></div>
+                    <small class="app__muted" data-i18n="screen.offlineSummary">Acumulados 18 · Usados 6</small>
+                  </div>
+                  <p class="app__section" data-i18n="screen.offlineMoves">Movimientos</p>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.offlineM1">Uso · S-0142</strong><small>12/08 · −3</small></span></div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.offlineM2">Acumulación mensual</strong><small>01/08 · +2.5</small></span></div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.offlineM3">Ajuste de RR.HH.</strong><small>20/07 · +1</small></span></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="float-card float-card--tr glass" aria-hidden="true">
+              <p class="float-card__head"><svg><use href="#i-wifi"></use></svg><strong data-i18n="features.f2Float">Modo sin conexión</strong></p>
+              <small data-i18n="features.f2FloatSub">2 marcaciones en cola · se enviarán al reconectar</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature" id="seguridad">
+          <div class="feature__copy">
+            <span class="eyebrow"><svg aria-hidden="true"><use href="#i-shield"></use></svg><span data-i18n="features.f3Eyebrow">Seguridad</span></span>
+            <h3 class="title-md" data-i18n="features.f3Title">Tus boletas, protegidas con tu huella</h3>
+            <p class="lead" data-i18n="features.f3Lead">Remuneración y boletas se muestran solo después de verificar tu identidad con el sensor biométrico del teléfono. La plantilla biométrica nunca sale del dispositivo.</p>
+            <ul class="feature__points">
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f3p1">Sensor biométrico del teléfono</strong><small data-i18n="features.f3p1Sub">La verificación ocurre en tu equipo</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f3p2">Sesión cifrada</strong><small data-i18n="features.f3p2Sub">Token guardado en almacenamiento seguro del sistema</small></span></li>
+              <li><span class="icon-box icon-box--sm"><svg aria-hidden="true"><use href="#i-check"></use></svg></span><span><strong data-i18n="features.f3p3">Acceso por rol</strong><small data-i18n="features.f3p3Sub">Cada colaborador ve solo su propia información</small></span></li>
+            </ul>
+          </div>
+          <div class="feature__visual glass glass--strong">
+            <span class="dots feature__dots" aria-hidden="true"></span>
+            <figure class="device" role="img" data-i18n-attr="aria-label:screen.payslipAlt" aria-label="Boletas protegidas con huella en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.payslipTitle">Mis boletas</p>
+                  <div class="app__card app__card--center">
+                    <span class="app__lock"><svg><use href="#i-lock"></use></svg></span>
+                    <strong data-i18n="screen.payslipLocked">Tus boletas están protegidas</strong>
+                    <small class="app__muted" data-i18n="screen.payslipVerify">Verifica tu identidad con tu huella</small>
+                    <span class="app__btn" data-i18n="screen.payslipUnlock">Desbloquear con huella</span>
+                  </div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.payslipAug">Agosto 2026</strong><small>S/ •,•••.••</small></span><span class="app__chip app__chip--approved" data-i18n="status.paid">Pagado</span></div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.payslipJul">Julio 2026</strong><small>S/ •,•••.••</small></span><span class="app__chip app__chip--approved" data-i18n="status.paid">Pagado</span></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span></span><span></span><span></span><span class="is-active"></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+            <div class="float-card float-card--bl glass" aria-hidden="true">
+              <p class="float-card__head"><svg><use href="#i-fingerprint"></use></svg><strong data-i18n="features.f3Float">Identidad verificada</strong></p>
+              <small data-i18n="features.f3FloatSub">Ley N.° 29733 · acceso por rol</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="modules section section--white" aria-labelledby="modules-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sparkle"></use></svg><span data-i18n="modules.eyebrow">Todo en una sola app</span></span>
+          <h2 class="title-lg" id="modules-title" data-i18n="modules.title">Siete módulos, una sola fuente de verdad</h2>
+          <p class="lead" data-i18n="modules.lead">Cada módulo responde a un proceso real de gestión de personas. Flowboard no calcula planillas ni reemplaza tu sistema contable: publica la información para que todos la vean.</p>
+        </div>
+        <ul class="modules__grid">
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-people"></use></svg></span><h3 data-i18n="modules.m1">Colaboradores y organigrama</h3><p data-i18n="modules.m1Desc">Ficha única, áreas, posiciones, jefe directo, cese y reincorporación.</p><ul class="module__tags"><li data-i18n="modules.m1t1">Ficha única</li><li data-i18n="modules.m1t2">Organigrama</li><li data-i18n="modules.m1t3">Expediente digital</li></ul></li>
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span><h3 data-i18n="modules.m2">Asistencia</h3><p data-i18n="modules.m2Desc">Marcación desde el móvil, puntualidad, faltas, horas y sobretiempo.</p><ul class="module__tags"><li data-i18n="modules.m2t1">Marcación</li><li data-i18n="modules.m2t2">Tardanzas</li><li data-i18n="modules.m2t3">Sobretiempo</li></ul></li>
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-request"></use></svg></span><h3 data-i18n="modules.m3">Solicitudes</h3><p data-i18n="modules.m3Desc">Vacaciones, licencias y permisos con estados y aprobación por jerarquía.</p><ul class="module__tags"><li data-i18n="status.pending">Pendiente</li><li data-i18n="status.approved">Aprobado</li><li data-i18n="status.review">En revisión</li></ul></li>
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-gift"></use></svg></span><h3 data-i18n="modules.m4">Beneficios y vacaciones</h3><p data-i18n="modules.m4Desc">Gratificaciones, canastas y vales, con saldo de vacaciones automático.</p><ul class="module__tags"><li data-i18n="modules.m4t1">Saldo</li><li data-i18n="modules.m4t2">Entregas</li><li data-i18n="modules.m4t3">Ajustes</li></ul></li>
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-card"></use></svg></span><h3 data-i18n="modules.m5">Boletas y pagos</h3><p data-i18n="modules.m5Desc">Boletas del sistema de planilla, publicadas y con estado de depósito.</p><ul class="module__tags"><li data-i18n="modules.m5t1">Publicado</li><li data-i18n="status.paid">Pagado</li><li data-i18n="modules.m5t3">Observado</li></ul></li>
+          <li class="module glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-leaf"></use></svg></span><h3 data-i18n="modules.m6">Bienestar laboral</h3><p data-i18n="modules.m6Desc">Temperatura, iluminación y calidad del aire con umbrales propios.</p><ul class="module__tags"><li data-i18n="modules.m6t1">Óptimo</li><li data-i18n="modules.m6t2">Aceptable</li><li data-i18n="modules.m6t3">Peligroso</li></ul></li>
+        </ul>
+        <div class="module-wide glass glass--strong">
+          <span class="icon-box icon-box--lg"><svg aria-hidden="true"><use href="#i-shield"></use></svg></span>
+          <div>
+            <h3 data-i18n="modules.m7">Identidad y acceso por rol</h3>
+            <p data-i18n="modules.m7Desc">Credenciales automáticas al registrar a un colaborador, cambio obligatorio de contraseña, desbloqueo con huella y cuentas inhabilitadas al registrar un cese.</p>
+          </div>
+          <a class="btn btn--secondary" href="#seguridad"><span data-i18n="modules.m7Cta">Ver seguridad</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="integrations section section--soft" aria-labelledby="integrations-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-plug"></use></svg><span data-i18n="integrations.eyebrow">Integraciones</span></span>
+          <h2 class="title-lg" id="integrations-title" data-i18n="integrations.title">Se conecta con lo que tu organización ya usa</h2>
+          <p class="lead" data-i18n="integrations.lead">Flowboard convive con tu sistema de planilla y tus canales actuales. No tienes que cambiar de sistema contable para empezar.</p>
+        </div>
+        <ul class="integrations__grid">
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-bell"></use></svg></span><span><strong>Firebase Cloud Messaging</strong><small data-i18n="integrations.i1">Notificaciones push</small></span></li>
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-card"></use></svg></span><span><strong data-i18n="integrations.i2">Tu sistema de planilla</strong><small data-i18n="integrations.i2Sub">Carga de boletas en PDF</small></span></li>
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span><span><strong data-i18n="integrations.i3">Relojes de asistencia</strong><small data-i18n="integrations.i3Sub">Marcaciones importadas</small></span></li>
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-leaf"></use></svg></span><span><strong data-i18n="integrations.i4">Sensores ambientales</strong><small data-i18n="integrations.i4Sub">Lecturas de bienestar</small></span></li>
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-calendar"></use></svg></span><span><strong data-i18n="integrations.i5">API de feriados</strong><small data-i18n="integrations.i5Sub">Días hábiles en Perú</small></span></li>
+          <li class="integration glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-android"></use></svg></span><span><strong>Android</strong><small data-i18n="integrations.i6Sub">Kotlin y Flutter</small></span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -391,5 +562,6 @@
   <script src="assets/i18n/hero.i18n.js"></script>
   <script src="assets/i18n/value.i18n.js"></script>
   <script src="assets/i18n/segments.i18n.js"></script>
+  <script src="assets/i18n/features.i18n.js"></script>
 </body>
 </html>
