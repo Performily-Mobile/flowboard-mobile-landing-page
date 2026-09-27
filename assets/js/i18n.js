@@ -1,13 +1,3 @@
-/* ==========================================================================
-   Flowboard · Landing Page
-   i18n.js — cambio de idioma es_419 / en_US (US55)
-   --------------------------------------------------------------------------
-   · Cada sección registra sus textos con FlowboardI18n.register({ es, en }).
-   · En el HTML:  data-i18n="clave"                    → textContent
-                  data-i18n-attr="aria-label:clave"    → atributos (separados por ;)
-   · El idioma elegido se guarda y se mantiene al navegar entre páginas.
-   ========================================================================== */
-
 (function () {
   "use strict";
 

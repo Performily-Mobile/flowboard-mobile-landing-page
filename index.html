@@ -15,11 +15,196 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/base.css">
+
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/device.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
 
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" data-i18n-attr="aria-label:header.homeLabel" aria-label="Flowboard, ir al inicio">
+        <img src="assets/img/logo.svg" alt="" width="32" height="32">
+        <span>Flowboard</span>
+      </a>
+
+      <nav class="main-nav" data-i18n-attr="aria-label:header.navLabel" aria-label="Navegación principal">
+        <ul class="main-nav__list">
+          <li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li>
+          <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+          <li><a href="#seguridad" data-i18n="nav.security">Seguridad</a></li>
+          <li><a href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <div class="lang-select" data-lang-select>
+          <button class="lang-select__trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" data-i18n-attr="aria-label:header.langLabel" aria-label="Cambiar idioma">
+            <svg aria-hidden="true"><use href="#i-globe"></use></svg>
+            <span data-lang-current>ES</span>
+            <svg class="lang-select__chevron" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </button>
+          <ul class="lang-select__menu glass" id="lang-menu" role="menu" hidden>
+            <li role="none">
+              <button type="button" role="menuitemradio" aria-checked="true" data-set-lang="es">
+                <span><strong>Español (Latinoamérica)</strong><small>es_419</small></span>
+                <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              </button>
+            </li>
+            <li role="none">
+              <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="en">
+                <span><strong>English (United States)</strong><small>en_US</small></span>
+                <svg aria-hidden="true"><use href="#i-check"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn--secondary btn--sm hide-mobile" href="#acceso" data-i18n="header.login">Iniciar sesión</a>
+        <a class="btn btn--primary btn--sm hide-mobile" href="#descargar">
+          <svg aria-hidden="true"><use href="#i-android"></use></svg>
+          <span data-i18n="header.download">Descargar app</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:header.openMenu" aria-label="Abrir menú">
+          <svg class="menu-toggle__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="menu-toggle__close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <ul class="mobile-menu__list">
+        <li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li>
+        <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+        <li><a href="#seguridad" data-i18n="nav.security">Seguridad</a></li>
+        <li><a href="#preguntas" data-i18n="nav.faq">Preguntas</a></li>
+      </ul>
+      <p class="mobile-menu__label" data-i18n="header.language">Idioma</p>
+      <div class="lang-toggle" role="group" data-i18n-attr="aria-label:header.langLabel" aria-label="Cambiar idioma">
+        <button type="button" data-set-lang="es" aria-pressed="true">Español</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+      <div class="mobile-menu__actions">
+        <a class="btn btn--primary btn--block" href="#descargar">
+          <svg aria-hidden="true"><use href="#i-android"></use></svg>
+          <span data-i18n="hero.ctaDownload">Descargar para Android</span>
+        </a>
+        <a class="btn btn--secondary btn--block" href="#acceso" data-i18n="header.login">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
   <main id="main" tabindex="-1">
+    <section class="hero section section--blue" aria-labelledby="hero-title">
+      <span class="dots hero__dots" aria-hidden="true"></span>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow">
+            <svg aria-hidden="true"><use href="#i-sparkle"></use></svg>
+            <span data-i18n="hero.eyebrow">App móvil de gestión de personas · Android</span>
+          </span>
+          <h1 class="title-xl" id="hero-title" data-i18n="hero.title">La información laboral de tu equipo, en su propio celular</h1>
+          <p class="lead" data-i18n="hero.lead">Flowboard reúne la ficha del colaborador, la asistencia, las solicitudes, los beneficios y las boletas en una sola fuente de verdad. RR.HH. deja de responder consultas repetitivas y cada colaborador resuelve lo suyo desde su teléfono.</p>
+          <div class="hero__actions" id="descargar">
+            <a class="btn btn--primary" href="#acceso">
+              <svg aria-hidden="true"><use href="#i-android"></use></svg>
+              <span data-i18n="hero.ctaDownload">Descargar para Android</span>
+            </a>
+            <a class="btn btn--secondary" href="#funcionalidades">
+              <span data-i18n="hero.ctaFeatures">Ver funcionalidades</span>
+              <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+          <ul class="hero__trust">
+            <li><svg aria-hidden="true"><use href="#i-wifi"></use></svg><span data-i18n="hero.trustOffline">Funciona sin conexión</span></li>
+            <li><svg aria-hidden="true"><use href="#i-fingerprint"></use></svg><span data-i18n="hero.trustBiometric">Protegido con huella</span></li>
+            <li><svg aria-hidden="true"><use href="#i-globe"></use></svg><span data-i18n="hero.trustLang">Español e inglés</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__modules" aria-hidden="true">
+            <p class="hero__modules-label" data-i18n="hero.modSelf">Autogestión</p>
+            <div class="module-chip glass module-chip--active"><svg><use href="#i-request"></use></svg><span><strong data-i18n="mod.requests">Solicitudes</strong><small data-i18n="hero.modRequestsSub">Vacaciones · permisos</small></span></div>
+            <div class="module-chip glass"><svg><use href="#i-clock"></use></svg><span><strong data-i18n="mod.attendance">Asistencia</strong><small data-i18n="hero.modAttendanceSub">Marcación e historial</small></span></div>
+            <div class="module-chip glass"><svg><use href="#i-card"></use></svg><span><strong data-i18n="mod.payslips">Boletas</strong><small data-i18n="hero.modPayslipsSub">Protegidas con huella</small></span></div>
+            <p class="hero__modules-label" data-i18n="hero.modAdmin">Administración</p>
+            <div class="module-chip glass"><svg><use href="#i-people"></use></svg><span><strong data-i18n="mod.employees">Colaboradores</strong><small data-i18n="hero.modEmployeesSub">Ficha · organigrama</small></span></div>
+            <div class="module-chip glass"><svg><use href="#i-gift"></use></svg><span><strong data-i18n="mod.benefits">Beneficios</strong><small data-i18n="hero.modBenefitsSub">Saldo · entregas</small></span></div>
+            <div class="module-chip glass"><svg><use href="#i-leaf"></use></svg><span><strong data-i18n="mod.wellbeing">Bienestar</strong><small data-i18n="hero.modWellbeingSub">Indicadores ambientales</small></span></div>
+          </div>
+
+          <span class="hero__line" aria-hidden="true"><span class="hero__node"></span></span>
+
+          <div class="hero__phone">
+            <figure class="device" role="img" data-i18n-attr="aria-label:screen.homeAlt" aria-label="Pantalla de inicio del colaborador en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.homeHello">Hola, María</p>
+                  <div class="app__card app__card--tint">
+                    <p class="app__label" data-i18n="screen.homeBalance">Mi saldo de vacaciones</p>
+                    <p class="app__big">12 <small data-i18n="screen.homeDays">días disponibles</small></p>
+                    <span class="app__btn">+ <span data-i18n="screen.homeRequest">Solicitar vacaciones</span></span>
+                  </div>
+                  <div class="app__grid2">
+                    <div class="app__card"><p class="app__label" data-i18n="screen.homePending">Pendientes</p><p class="app__stat">2</p></div>
+                    <div class="app__card"><p class="app__label" data-i18n="screen.homeCheckin">Entrada hoy</p><p class="app__stat app__stat--warn">08:52</p></div>
+                  </div>
+                  <p class="app__section" data-i18n="screen.homeMyRequests">Mis solicitudes</p>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.vacation">Vacaciones</strong><small>05/10 – 09/10 · 5</small></span><span class="app__chip app__chip--pending" data-i18n="status.pending">Pendiente</span></div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.medical">Descanso médico</strong><small>15/09 · 1</small></span><span class="app__chip app__chip--approved" data-i18n="status.approved">Aprobado</span></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="float-card float-card--notif" aria-hidden="true">
+            <div class="float-card__row"><span class="tag" data-i18n="status.approvedF">Aprobada</span><small data-i18n="hero.now">ahora</small></div>
+            <strong data-i18n="hero.notifTitle">Vacaciones · 05/10 al 09/10</strong>
+            <p data-i18n="hero.notifBody">Juan Pérez aprobó tu solicitud. Tu saldo se actualizó a 7 días.</p>
+          </div>
+
+          <div class="float-card float-card--team glass" aria-hidden="true">
+            <p class="float-card__caption" data-i18n="hero.teamTitle">Hoy en tu equipo</p>
+            <p><strong>12</strong><small data-i18n="hero.teamPending">Solicitudes pendientes</small></p>
+            <p><strong>92%</strong><small data-i18n="hero.teamAttendance">Asistencia</small></p>
+            <p><strong>3</strong><small data-i18n="hero.teamPayslips">Boletas por pagar</small></p>
+          </div>
+
+          <div class="float-card float-card--alert glass" aria-hidden="true">
+            <p class="float-card__head"><svg><use href="#i-sparkle"></use></svg><strong data-i18n="hero.alertTitle">Alerta de bienestar</strong></p>
+            <p data-i18n="hero.alert1">Oficina Administración · piso 3</p>
+            <p data-i18n="hero.alert2">CO₂ 1,620 ppm · nivel peligroso</p>
+            <p data-i18n="hero.alert3">Aviso enviado a RR.HH. 10:42</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero__highlights">
+          <li class="glass"><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="hero.high1">Consulta tu saldo de vacaciones, tus beneficios y tus boletas en minutos, sin preguntarle a nadie</span></li>
+          <li class="glass"><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="hero.high2">Aprueba o rechaza solicitudes desde la notificación, estés en la oficina, en ruta o en almacén</span></li>
+          <li class="glass"><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="hero.high3">Cada trámite queda con su estado, su responsable y su fecha. Nada circula por WhatsApp</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sectors section section--soft" aria-labelledby="sectors-title">
+      <div class="container">
+        <h2 class="sectors__title" id="sectors-title" data-i18n="sectors.title">Pensado para equipos que trabajan lejos de un escritorio</h2>
+        <ul class="sectors__list">
+          <li class="sector glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-store"></use></svg></span><span><strong data-i18n="sectors.retail">Retail y tiendas</strong><small data-i18n="sectors.retailSub">Cajeros, repositores y personal de piso</small></span></li>
+          <li class="sector glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-truck"></use></svg></span><span><strong data-i18n="sectors.logistics">Logística y almacenes</strong><small data-i18n="sectors.logisticsSub">Turnos rotativos y operarios</small></span></li>
+          <li class="sector glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-people"></use></svg></span><span><strong data-i18n="sectors.services">Servicios</strong><small data-i18n="sectors.servicesSub">Equipos en campo y atención al cliente</small></span></li>
+          <li class="sector glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-org"></use></svg></span><span><strong data-i18n="sectors.offices">Oficinas administrativas</strong><small data-i18n="sectors.officesSub">Áreas de soporte y RR.HH.</small></span></li>
+          <li class="sector glass"><span class="icon-box"><svg aria-hidden="true"><use href="#i-factory"></use></svg></span><span><strong data-i18n="sectors.manufacturing">Manufactura</strong><small data-i18n="sectors.manufacturingSub">Personal de planta por turnos</small></span></li>
+        </ul>
+      </div>
+    </section>
 
   </main>
 
@@ -55,5 +240,9 @@
   </svg>
 
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/i18n/common.i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/i18n/screens.i18n.js"></script>
+  <script src="assets/i18n/hero.i18n.js"></script>
 </body>
 </html>
