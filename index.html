@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/base.css">
-
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/device.css">
   <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/value.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
@@ -96,6 +96,7 @@
   </header>
 
   <main id="main" tabindex="-1">
+
     <section class="hero section section--blue" aria-labelledby="hero-title">
       <span class="dots hero__dots" aria-hidden="true"></span>
       <div class="container hero__grid">
@@ -206,6 +207,61 @@
       </div>
     </section>
 
+    <section class="compare section section--white" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <h2 class="title-lg" id="compare-title" data-i18n="compare.title">De "¿a quién le pregunto?" a "lo veo en mi celular"</h2>
+          <p class="lead" data-i18n="compare.lead">Hoy la información laboral vive en hojas de cálculo, correos y chats. Flowboard la ordena en un solo registro y la pone al alcance de cada persona.</p>
+        </div>
+        <div class="compare__grid">
+          <article class="compare__card glass">
+            <h3 data-i18n="compare.beforeTitle">Gestión tradicional</h3>
+            <ul class="compare__list compare__list--before">
+              <li><svg aria-hidden="true"><use href="#i-x-circle"></use></svg><span data-i18n="compare.before1">Consultas por WhatsApp y respuestas horas o días después</span></li>
+              <li><svg aria-hidden="true"><use href="#i-x-circle"></use></svg><span data-i18n="compare.before2">Saldos de vacaciones calculados a mano en Excel</span></li>
+              <li><svg aria-hidden="true"><use href="#i-x-circle"></use></svg><span data-i18n="compare.before3">Solicitudes aprobadas por correo, sin registro</span></li>
+              <li><svg aria-hidden="true"><use href="#i-x-circle"></use></svg><span data-i18n="compare.before4">Boletas reenviadas una por una</span></li>
+              <li><svg aria-hidden="true"><use href="#i-x-circle"></use></svg><span data-i18n="compare.before5">El personal de campo depende de una computadora</span></li>
+            </ul>
+          </article>
+          <article class="compare__card compare__card--after glass glass--strong glass--highlight">
+            <h3 data-i18n="compare.afterTitle">Con Flowboard</h3>
+            <ul class="compare__list">
+              <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="compare.after1">Cada colaborador consulta lo suyo desde su teléfono</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="compare.after2">Saldo de vacaciones actualizado y compartido por ambas partes</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="compare.after3">Solicitudes con estado, aprobador y fecha visibles</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="compare.after4">Boletas publicadas y protegidas con huella</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="compare.after5">Funciona incluso con conexión intermitente</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics section section--blue-2" aria-labelledby="metrics-title">
+      <span class="dots metrics__dots" aria-hidden="true"></span>
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <h2 class="title-lg" id="metrics-title" data-i18n="metrics.title">Menos espera. Más certeza.</h2>
+            <p class="lead" data-i18n="metrics.lead">Resultados que buscamos en cada organización que usa Flowboard.</p>
+          </div>
+          <a class="btn btn--primary" href="#acceso">
+            <span data-i18n="metrics.cta">Solicitar una demostración</span>
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+        <ul class="metrics__grid">
+          <li class="metric glass"><strong>&lt; 24 h</strong><span data-i18n="metrics.m1">para aprobar vacaciones, licencias y permisos</span><small data-i18n="metrics.m1Sub">antes 48 a 72 h</small></li>
+          <li class="metric glass"><strong>70 %</strong><span data-i18n="metrics.m2">de consultas laborales resueltas en autoservicio</span><small data-i18n="metrics.m2Sub">al tercer mes</small></li>
+          <li class="metric glass"><strong>&lt; 5 min</strong><span data-i18n="metrics.m3">para conocer tu saldo de vacaciones</span><small data-i18n="metrics.m3Sub">antes 150 min</small></li>
+          <li class="metric glass"><strong>100 %</strong><span data-i18n="metrics.m4">de solicitudes con estado y responsable</span><small data-i18n="metrics.m4Sub">cero canales informales</small></li>
+          <li class="metric glass"><strong>&lt; 2 %</strong><span data-i18n="metrics.m5">de error en registros de personal</span><small data-i18n="metrics.m5Sub">antes 15 a 20 %</small></li>
+        </ul>
+      </div>
+    </section>
+
+
   </main>
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -240,9 +296,11 @@
   </svg>
 
   <script src="assets/js/i18n.js"></script>
+
   <script src="assets/i18n/common.i18n.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/i18n/screens.i18n.js"></script>
   <script src="assets/i18n/hero.i18n.js"></script>
+  <script src="assets/i18n/value.i18n.js"></script>
 </body>
 </html>

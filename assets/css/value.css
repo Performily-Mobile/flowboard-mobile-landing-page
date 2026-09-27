@@ -1,0 +1,50 @@
+.compare__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+.compare__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-xl);
+}
+.compare__card h3 { font-size: 24px; font-weight: 500; }
+.compare__card--after h3 { color: var(--color-primary); }
+.compare__list { display: grid; gap: 14px; }
+.compare__list li { display: flex; gap: 12px; font-size: 15px; }
+.compare__list svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 1px; color: var(--color-primary); }
+.compare__list--before li { color: var(--color-text-2); }
+.compare__list--before svg { color: var(--color-text-3); }
+
+.metrics__dots { top: 40px; left: 40px; }
+.metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--space-3);
+}
+.metric strong {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
+}
+.metric span { font-size: 15px; line-height: 1.4; }
+.metric small { font-size: 13px; color: var(--color-text-3); }
+
+@media (max-width: 1023px) {
+  .metrics__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .compare__grid { grid-template-columns: 1fr; }
+  .compare__card { padding: var(--space-3); }
+  .metric strong { font-size: 30px; }
+}
