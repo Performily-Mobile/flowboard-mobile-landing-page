@@ -1,5 +1,3 @@
-/* Textos de las pantallas de la app que se muestran dentro de los celulares.
-   Rama: feature/landing-hero */
 FlowboardI18n.register({
   es: {
     "status.pending": "Pendiente",

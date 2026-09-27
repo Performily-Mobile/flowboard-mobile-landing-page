@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/value.css">
   <link rel="stylesheet" href="assets/css/segments.css">
   <link rel="stylesheet" href="assets/css/features.css">
+  <link rel="stylesheet" href="assets/css/closing.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
@@ -522,6 +523,101 @@
       </div>
     </section>
 
+    <section class="testimonials section section--white" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-star"></use></svg><span data-i18n="testimonials.eyebrow">Testimonios</span></span>
+          <h2 class="title-lg" id="testimonials-title" data-i18n="testimonials.title">Por qué RR.HH. y colaboradores eligen Flowboard</h2>
+        </div>
+        <div class="testimonials__grid">
+          <figure class="quote quote--featured glass glass--strong">
+            <svg class="quote__mark" aria-hidden="true"><use href="#i-sparkle"></use></svg>
+            <blockquote data-i18n="testimonials.q1">"Coordino entre 30 y 40 ingresos por día y todo vive en Excel y WhatsApp. Tener la ficha, las vacaciones y los accesos en un solo lugar me devuelve horas de la semana."</blockquote>
+            <figcaption><span class="quote__avatar" aria-hidden="true"></span><span><strong data-i18n="testimonials.q1Name">Asistente de RR.HH.</strong><small data-i18n="testimonials.q1Role">Empresa de retail · Lima</small></span></figcaption>
+          </figure>
+          <div class="testimonials__col">
+            <figure class="quote glass">
+              <p class="quote__stars" data-i18n-attr="aria-label:testimonials.stars" aria-label="5 de 5 estrellas">★★★★★</p>
+              <blockquote data-i18n="testimonials.q2">"Para ver mi saldo de vacaciones tenía que preguntarle a mi jefe. Quiero una app en el celular que me avise cuando me aprueban."</blockquote>
+              <figcaption><small data-i18n="testimonials.q2Role">Colaboradora · cajera de supermercado</small></figcaption>
+            </figure>
+            <figure class="quote glass">
+              <p class="quote__stars" data-i18n-attr="aria-label:testimonials.stars" aria-label="5 de 5 estrellas">★★★★★</p>
+              <blockquote data-i18n="testimonials.q3">"Envié una solicitud y nunca supe en qué estado quedó. Tuve que pedirle a mi jefe que intercediera."</blockquote>
+              <figcaption><small data-i18n="testimonials.q3Role">Colaborador · sector logística</small></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section section--blue" id="preguntas" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sparkle"></use></svg><span data-i18n="faq.eyebrow">Preguntas</span></span>
+          <h2 class="title-md" id="faq-title" data-i18n="faq.title">Lo que suelen preguntarnos</h2>
+          <p class="lead" data-i18n="faq.lead">¿Tienes otra duda? Escríbenos y te respondemos en menos de 24 horas.</p>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item glass" open>
+            <summary><span data-i18n="faq.q1">¿Flowboard calcula la planilla?</span><svg aria-hidden="true"><use href="#i-chevron-down"></use></svg></summary>
+            <p data-i18n="faq.a1">No. Publica las boletas que genera tu sistema de planilla y registra el estado de cada depósito. Tampoco aplica descuentos ni aportes.</p>
+          </details>
+          <details class="faq__item glass">
+            <summary><span data-i18n="faq.q2">¿Qué pasa si el colaborador no tiene señal?</span><svg aria-hidden="true"><use href="#i-chevron-down"></use></svg></summary>
+            <p data-i18n="faq.a2">La app muestra los últimos datos sincronizados, guardados de forma cifrada en el teléfono, y envía las marcaciones pendientes apenas vuelve la conexión.</p>
+          </details>
+          <details class="faq__item glass">
+            <summary><span data-i18n="faq.q3">¿Quién puede ver mi remuneración?</span><svg aria-hidden="true"><use href="#i-chevron-down"></use></svg></summary>
+            <p data-i18n="faq.a3">Solo tú y el personal de Recursos Humanos autorizado. En tu teléfono, las boletas se abren después de verificar tu huella.</p>
+          </details>
+          <details class="faq__item glass">
+            <summary><span data-i18n="faq.q4">¿Necesito importar mis datos de Excel?</span><svg aria-hidden="true"><use href="#i-chevron-down"></use></svg></summary>
+            <p data-i18n="faq.a4">Puedes empezar registrando a tu personal desde cero. La migración de historiales anteriores no forma parte de esta versión.</p>
+          </details>
+          <details class="faq__item glass">
+            <summary><span data-i18n="faq.q5">¿Está disponible en iOS?</span><svg aria-hidden="true"><use href="#i-chevron-down"></use></svg></summary>
+            <p data-i18n="faq.a5">Por ahora Flowboard está disponible para Android. La versión para iOS está en nuestros planes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section section--white" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__band glass glass--strong">
+          <span class="dots cta__dots" aria-hidden="true"></span>
+          <div class="cta__copy">
+            <h2 class="title-lg" id="cta-title" data-i18n="cta.title">Lleva la gestión de personas al celular de tu equipo</h2>
+            <p class="lead" data-i18n="cta.lead">Empieza con un área de tu organización: configura vacaciones y solicitudes y mide cuánto tiempo ahorra tu equipo.</p>
+            <a class="btn btn--primary" href="#acceso"><span data-i18n="header.login">Iniciar sesión</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <a class="store-badge" href="#descargar">
+              <svg aria-hidden="true"><use href="#i-android"></use></svg>
+              <span><small data-i18n="cta.badgeSmall">Disponible para</small><strong>Android</strong></span>
+            </a>
+          </div>
+          <figure class="device device--sm" role="img" data-i18n-attr="aria-label:screen.hrAlt" aria-label="Panel de Recursos Humanos en Flowboard">
+            <div class="device__screen" aria-hidden="true">
+              <div class="app">
+                <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                <p class="app__title" data-i18n="screen.hrTitle">Panel</p>
+                <div class="app__grid2">
+                  <div class="app__card"><p class="app__label" data-i18n="screen.hrEmployees">Colaboradores</p><p class="app__stat">184</p></div>
+                  <div class="app__card"><p class="app__label" data-i18n="screen.homePending">Pendientes</p><p class="app__stat app__stat--warn">12</p></div>
+                </div>
+                <p class="app__section" data-i18n="screen.hrByArea">Asistencia por área</p>
+                <div class="app__bar"><small data-i18n="screen.areaOps">Operaciones</small><span style="--v:88%"></span></div>
+                <div class="app__bar"><small data-i18n="screen.areaSales">Comercial</small><span style="--v:95%"></span></div>
+                <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong>Ana Martínez</strong><small data-i18n="screen.vacation">Vacaciones</small></span><span class="app__chip app__chip--pending" data-i18n="status.pending">Pendiente</span></div>
+                <div class="app__spacer"></div>
+                <div class="app__nav"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -563,5 +659,6 @@
   <script src="assets/i18n/value.i18n.js"></script>
   <script src="assets/i18n/segments.i18n.js"></script>
   <script src="assets/i18n/features.i18n.js"></script>
+  <script src="assets/i18n/closing.i18n.js"></script>
 </body>
 </html>
