@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="assets/css/device.css">
   <link rel="stylesheet" href="assets/css/hero.css">
   <link rel="stylesheet" href="assets/css/value.css">
+  <link rel="stylesheet" href="assets/css/segments.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
@@ -261,8 +262,96 @@
       </div>
     </section>
 
+    <section class="segments section section--white" id="como-funciona" aria-labelledby="segments-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">
+            <svg aria-hidden="true"><use href="#i-sparkle"></use></svg>
+            <span data-i18n="segments.eyebrow">Una app, dos experiencias</span>
+          </span>
+          <h2 class="title-lg" id="segments-title" data-i18n="segments.title">Una sola app, la vista que te corresponde</h2>
+        </div>
+
+        <div class="segments__grid">
+          <article class="segment glass">
+            <div class="segment__copy">
+              <span class="segment__tag" data-i18n="segments.hrTag">Personal de RR.HH.</span>
+              <h3 data-i18n="segments.hrTitle">Deja de responder la misma consulta todos los días</h3>
+              <ul class="check-list">
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.hr1">Ficha única del colaborador y organigrama</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.hr2">Aprobaciones dirigidas al jefe correcto</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.hr3">Indicadores de personal, asistencia y pagos</span></li>
+              </ul>
+            </div>
+            <figure class="device device--sm" role="img" data-i18n-attr="aria-label:screen.hrAlt" aria-label="Panel de Recursos Humanos en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.hrTitle">Panel</p>
+                  <div class="app__grid2">
+                    <div class="app__card"><p class="app__label" data-i18n="screen.hrEmployees">Colaboradores</p><p class="app__stat">184</p></div>
+                    <div class="app__card"><p class="app__label" data-i18n="screen.homePending">Pendientes</p><p class="app__stat app__stat--warn">12</p></div>
+                    <div class="app__card"><p class="app__label" data-i18n="screen.hrAttendance">Asistencia</p><p class="app__stat">92%</p></div>
+                    <div class="app__card"><p class="app__label" data-i18n="screen.hrToPay">Por pagar</p><p class="app__stat">3</p></div>
+                  </div>
+                  <p class="app__section" data-i18n="screen.hrByArea">Asistencia por área</p>
+                  <div class="app__bar"><small data-i18n="screen.areaOps">Operaciones</small><span style="--v:88%"></span></div>
+                  <div class="app__bar"><small data-i18n="screen.areaSales">Comercial</small><span style="--v:95%"></span></div>
+                  <div class="app__bar"><small data-i18n="screen.areaWarehouse">Almacén</small><span style="--v:81%"></span></div>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong>Pedro Huamán</strong><small data-i18n="screen.medical">Descanso médico</small></span><span class="app__chip app__chip--pending" data-i18n="status.pending">Pendiente</span></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+          </article>
+
+          <article class="segment glass glass--highlight">
+            <div class="segment__copy">
+              <span class="segment__tag segment__tag--primary" data-i18n="segments.empTag">Colaboradores</span>
+              <h3 data-i18n="segments.empTitle">Tu información laboral, cuando la necesites</h3>
+              <ul class="check-list">
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.emp1">Saldo de vacaciones, beneficios y boletas</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.emp2">Solicitudes con aviso en cada cambio</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check-circle"></use></svg><span data-i18n="segments.emp3">Consulta incluso sin conexión</span></li>
+              </ul>
+            </div>
+            <figure class="device device--sm" role="img" data-i18n-attr="aria-label:screen.homeAlt" aria-label="Pantalla de inicio del colaborador en Flowboard">
+              <div class="device__screen" aria-hidden="true">
+                <div class="app">
+                  <div class="app__status"><span>9:41</span><span class="app__status-icons"></span></div>
+                  <p class="app__title" data-i18n="screen.homeHello">Hola, María</p>
+                  <div class="app__card app__card--tint">
+                    <p class="app__label" data-i18n="screen.homeBalance">Mi saldo de vacaciones</p>
+                    <p class="app__big">12 <small data-i18n="screen.homeDays">días disponibles</small></p>
+                    <span class="app__btn">+ <span data-i18n="screen.homeRequest">Solicitar vacaciones</span></span>
+                  </div>
+                  <div class="app__grid2">
+                    <div class="app__card"><p class="app__label" data-i18n="screen.homePending">Pendientes</p><p class="app__stat">2</p></div>
+                    <div class="app__card"><p class="app__label" data-i18n="screen.homeCheckin">Entrada hoy</p><p class="app__stat app__stat--warn">08:52</p></div>
+                  </div>
+                  <p class="app__section" data-i18n="screen.homeMyRequests">Mis solicitudes</p>
+                  <div class="app__item"><span class="app__avatar"></span><span class="app__item-text"><strong data-i18n="screen.vacation">Vacaciones</strong><small>05/10 – 09/10</small></span><span class="app__chip app__chip--pending" data-i18n="status.pending">Pendiente</span></div>
+                  <div class="app__spacer"></div>
+                  <div class="app__nav"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+        <div class="segments__access" id="acceso">
+          <a class="btn btn--primary" href="#descargar">
+            <span data-i18n="header.login">Iniciar sesión</span>
+            <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+          <p><svg aria-hidden="true"><use href="#i-shield"></use></svg><span data-i18n="segments.access">Un solo acceso: Flowboard reconoce tu rol y te muestra tu vista de RR.HH. o de colaborador.</span></p>
+        </div>
+      </div>
+    </section>
 
   </main>
+
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -296,11 +385,11 @@
   </svg>
 
   <script src="assets/js/i18n.js"></script>
-
   <script src="assets/i18n/common.i18n.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/i18n/screens.i18n.js"></script>
   <script src="assets/i18n/hero.i18n.js"></script>
   <script src="assets/i18n/value.i18n.js"></script>
+  <script src="assets/i18n/segments.i18n.js"></script>
 </body>
 </html>
