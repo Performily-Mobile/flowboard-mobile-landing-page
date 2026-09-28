@@ -16,7 +16,7 @@
 .quote figcaption { display: flex; align-items: center; gap: 12px; }
 .quote figcaption strong { display: block; font-size: 15px; color: var(--color-primary-dark); }
 .quote figcaption small { font-size: 13px; color: var(--color-text-2); }
-.quote__stars { color: #E0A800; letter-spacing: 3px; font-size: 14px; }
+.testimonials__note { margin-top: var(--space-3); font-size: 13px; color: var(--color-text-3); }
 
 .quote--featured {
   justify-content: center;
