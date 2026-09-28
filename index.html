@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="assets/css/segments.css">
   <link rel="stylesheet" href="assets/css/features.css">
   <link rel="stylesheet" href="assets/css/closing.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido principal</a>
@@ -360,6 +362,7 @@
           <p class="lead" data-i18n="features.lead">Almacén, tienda, obra o ruta: Flowboard lleva cada trámite al teléfono que el colaborador ya usa.</p>
         </div>
 
+
         <article class="feature">
           <div class="feature__copy">
             <span class="eyebrow"><svg aria-hidden="true"><use href="#i-request"></use></svg><span data-i18n="features.f1Eyebrow">Solicitudes</span></span>
@@ -438,6 +441,7 @@
             </div>
           </div>
         </article>
+
 
         <article class="feature" id="seguridad">
           <div class="feature__copy">
@@ -620,6 +624,50 @@
 
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="#top"><img src="assets/img/logo.svg" alt="" width="32" height="32"><span>Flowboard</span></a>
+          <p data-i18n="footer.about">Performily · Tecnología para la gestión de personas. Lima, Perú.</p>
+          <div class="lang-toggle" role="group" data-i18n-attr="aria-label:header.langLabel" aria-label="Cambiar idioma">
+            <button type="button" data-set-lang="es" aria-pressed="true">Español</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <nav data-i18n-attr="aria-label:footer.product" aria-label="Producto">
+          <h2 data-i18n="footer.product">Producto</h2>
+          <ul>
+            <li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li>
+            <li><a href="#seguridad" data-i18n="nav.security">Seguridad</a></li>
+            <li><a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a></li>
+            <li><a href="#preguntas" data-i18n="footer.faq">Preguntas frecuentes</a></li>
+          </ul>
+        </nav>
+        <nav data-i18n-attr="aria-label:footer.forYou" aria-label="Para ti">
+          <h2 data-i18n="footer.forYou">Para ti</h2>
+          <ul>
+            <li><a href="#como-funciona" data-i18n="footer.hr">Recursos Humanos</a></li>
+            <li><a href="#como-funciona" data-i18n="footer.employees">Colaboradores</a></li>
+            <li><a href="#descargar" data-i18n="hero.ctaDownload">Descargar para Android</a></li>
+            <li><a href="#acceso" data-i18n="header.login">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+        <nav data-i18n-attr="aria-label:footer.legal" aria-label="Legal">
+          <h2 data-i18n="footer.legal">Legal</h2>
+          <ul>
+            <li><a href="terms.html" data-i18n="footer.terms">Términos del servicio</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Política de privacidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <p data-i18n="footer.copy">© 2026 Performily. Tratamos tus datos conforme a la Ley N.° 29733 de Protección de Datos Personales.</p>
+        <p data-i18n="footer.made">Hecho en Lima, Perú</p>
+      </div>
+    </div>
+  </footer>
+
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.8 12.3l2.8 2.8 5.6-5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -660,5 +708,7 @@
   <script src="assets/i18n/segments.i18n.js"></script>
   <script src="assets/i18n/features.i18n.js"></script>
   <script src="assets/i18n/closing.i18n.js"></script>
+  <script src="assets/i18n/footer.i18n.js"></script>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
